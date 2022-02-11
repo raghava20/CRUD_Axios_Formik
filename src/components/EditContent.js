@@ -74,14 +74,14 @@ function EditContent() {
     }
 
     return (
-        <div>
+        <div className="p-2">
             <h1>Edit User</h1>
             <form>
-                <div class="form-group">
+                <div class="form-group mb-1">
                     <label for="exampleInputPassword1">Profile Pic</label>&nbsp;&nbsp;&nbsp;&nbsp;
                     <img className='user-logo' src={profile} alt="profile" />
                 </div>
-                <div class="form-group">
+                <div class="form-group mb-1">
                     <label for="exampleInputPassword1">User Name</label>
                     <input type="text" class="form-control" value={user} onChange={(e) => setUser(e.target.value)} placeholder="Enter Name" />
                 </div>
@@ -90,11 +90,11 @@ function EditContent() {
                     <input type="text" class="form-control" value={productName} onChange={(e) => setProductName(e.target.value)} placeholder="Enter Product" />
 
                 </div>
-                <div class="form-group">
+                <div class="form-group mb-1">
                     <label for="exampleInputPassword1">No Of Product</label>
                     <input type="number" class="form-control" value={noOfProduct} onChange={(e) => setNoOfProduct(e.target.value)} placeholder="Enter No of Product" />
                 </div>
-                <div class="form-group">
+                <div class="form-group mb-1">
                     <label for="exampleInputPassword1">Due</label><br />
                     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                         <input type="radio" class="btn-check" name="btnradio1" value={Due} onClick={() => setDue("Paid")} id="btnpaid" />
@@ -104,7 +104,7 @@ function EditContent() {
                         <label class="btn btn-outline-danger" for="btnnotpaid">Not Paid</label>
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group mb-1">
                     <label for="exampleInputPassword1">Status</label><br />
                     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                         <input type="radio" class="btn-check" name="btnradio" value={status} onClick={() => setStatus("Pending")} id="btnradio1" />
